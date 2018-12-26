@@ -1,4 +1,5 @@
-resource "github_repository" "repositories" {
+module "repository" {
+  source      = "../../"
   name        = "${var.name}"
   description = "${var.description}"
   has_wiki    = "${var.has_wiki}"

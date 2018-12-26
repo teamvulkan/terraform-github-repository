@@ -22,7 +22,7 @@ destroy: init
 	terraform destroy -force
 
 docs:
-	terraform-docs md . > ..\..\README.md
+	terraform-docs md . > ../../README.MD
 
 valid:
 	tflint
