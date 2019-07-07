@@ -22,8 +22,8 @@ destroy: init
 	terraform destroy -force
 
 docs:
-	terraform-docs md . > ../../README.MD
 
 valid:
 	tflint
 	terraform fmt -check=true -diff=true
+
