@@ -8,3 +8,9 @@ export README_DEPS ?= docs/targets.md docs/terraform.md
 ## Lint terraform code
 lint:
 	$(SELF) terraform/install terraform/get-modules terraform/get-plugins terraform/lint terraform/validate
+
+validate:
+	terraform init examples/exampleA
+	terraform plan -detailed-exitcode examples/exampleA
+    
+
