@@ -5,7 +5,7 @@
 #
 
 # Name of this project
-name: terraform-aws-teamcity
+name: terraform-aws-repository
 
 # Tags of this project
 tags:
@@ -56,12 +56,16 @@ usage: |-
 
   ```hcl
   module "repository" {
-    source           = "github.com/JamesWoolfenden/terraform-aws-teamcity"
-  }
+    source      = "github.com/JamesWoolfenden/terraform-aws-repository"
+    name        = var.name
+    description = var.description
+    has_wiki    = var.has_wiki
+    private     = var.private
+    topics      = var.topic
+    }
   ```
 
 include:
-  - "docs/targets.md"
   - "docs/terraform.md"
 
 # Contributors to this project

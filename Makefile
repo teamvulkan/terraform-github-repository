@@ -10,7 +10,6 @@ lint:
 	$(SELF) terraform/install terraform/get-modules terraform/get-plugins terraform/lint terraform/validate
 
 validate:
-	terraform init examples/exampleA
-	terraform plan -detailed-exitcode examples/exampleA
-    
-
+	cd ./examples/exampleA
+	terraform init
+	terraform plan
