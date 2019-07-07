@@ -20,7 +20,7 @@ script:
   - make terraform:get-modules
   - make terraform:lint
   - make terraform:validate
-  - make validate
+  - ./examples/exampleA/validate.sh
 
 after_success:
   - git config --global user.email "builds@travis-ci.com"
