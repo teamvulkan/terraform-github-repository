@@ -15,7 +15,8 @@ plan: init
 build: init
 	terraform apply -auto-approve
 
-check: init
+check: 
+    terraform init
 	terraform plan -detailed-exitcode
 
 destroy: init
