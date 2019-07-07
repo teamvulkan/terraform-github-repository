@@ -15,8 +15,8 @@ plan: init
 build: init
 	terraform apply -auto-approve
 
-check: 
-    terraform init
+check:
+	terraform init
 	terraform plan -detailed-exitcode
 
 destroy: init
@@ -27,4 +27,3 @@ docs:
 valid:
 	tflint
 	terraform fmt -check=true -diff=true
-

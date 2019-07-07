@@ -1,5 +1,9 @@
 SHELL := /bin/bash
 
+API_TOKEN = ${TOKEN}
+
+.SILENT: validate
+
 # List of targets the `readme` target should call before generating the readme
 export README_DEPS ?= docs/targets.md docs/terraform.md
 
@@ -11,5 +15,5 @@ lint:
 
 validate:
 	cd ./examples/exampleA
-	terraform init
-	terraform plan
+	@terraform init -backend-config="token=${API_TOKEN}"
+	terraform plan -detailed-exitcode
