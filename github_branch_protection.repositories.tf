@@ -4,7 +4,9 @@ resource "github_branch_protection" "repositories" {
   enforce_admins = var.enforce_admins
 
   required_pull_request_reviews {
-    dismiss_stale_reviews = true
+    dismiss_stale_reviews           = true
+    require_code_owner_reviews      = false
+    required_approving_review_count = 1
   }
 
 }

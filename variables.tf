@@ -29,7 +29,7 @@ variable "branch" {
 
 variable "enforce_admins" {
   type    = bool
-  default = true
+  default = false
 }
 
 variable "has_downloads" {
