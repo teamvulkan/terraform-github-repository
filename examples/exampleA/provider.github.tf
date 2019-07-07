@@ -1,4 +1,4 @@
 provider "github" {
   organization = "teamvulkan"
-  version      = "1.3"
+  version      = "2.2"
 }
