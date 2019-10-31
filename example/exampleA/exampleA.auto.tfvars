@@ -6,4 +6,4 @@ topics = [
   "building-block",
   "github",
   "organisation",
-  "terraform"]
+"terraform"]
