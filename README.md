@@ -3,7 +3,7 @@
 [![Build Status](https://github.com/JamesWoolfenden/terraform-github-repository/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-github-repository)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-github-repository.svg)](https://github.com/JamesWoolfenden/terraform-github-repository/releases/latest)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![pre-commit](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
+[![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
 Short lived feature branching support.
 To use this against Github you need to have a Github Organisation.
@@ -18,41 +18,40 @@ module repo {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name   | Version |
-| ------ | ------- |
-| github | n/a     |
+| Name | Version |
+|------|---------|
+| github | n/a |
 
 ## Inputs
 
-| Name           | Description                                                         | Type     | Default    | Required |
-| -------------- | ------------------------------------------------------------------- | -------- | ---------- | :------: |
-| branch         | n/a                                                                 | `string` | `"master"` |    no    |
-| description    | Put more effort into to descibing what your repo is about.          | `string` | n/a        |   yes    |
-| enforce_admins | n/a                                                                 | `bool`   | `false`    |    no    |
-| has_downloads  | n/a                                                                 | `bool`   | `false`    |    no    |
-| has_issues     | n/a                                                                 | `bool`   | `false`    |    no    |
-| has_projects   | n/a                                                                 | `bool`   | `false`    |    no    |
-| has_wiki       | This enables a wiki on your github repo. Why not.                   | `bool`   | n/a        |   yes    |
-| name           | We are following tech-resource-topic after hashicorp.               | `string` | n/a        |   yes    |
-| private        | Unless you have paid for private repos this ones going to be false. | `bool`   | `true`     |    no    |
-| topics         | n/a                                                                 | `list`   | n/a        |   yes    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| branch | n/a | `string` | `"master"` | no |
+| description | Put more effort into to descibing what your repo is about. | `string` | n/a | yes |
+| enforce\_admins | n/a | `bool` | `false` | no |
+| has\_downloads | n/a | `bool` | `false` | no |
+| has\_issues | n/a | `bool` | `false` | no |
+| has\_projects | n/a | `bool` | `false` | no |
+| has\_wiki | This enables a wiki on your github repo. Why not. | `bool` | n/a | yes |
+| name | We are following tech-resource-topic after hashicorp. | `string` | n/a | yes |
+| private | Unless you have paid for private repos this ones going to be false. | `bool` | `true` | no |
+| topics | n/a | `list` | n/a | yes |
 
 ## Outputs
 
-| Name           | Description                                                                                    |
-| -------------- | ---------------------------------------------------------------------------------------------- |
-| full_name      | A string of the form 'orgname/reponame'.                                                       |
-| git_clone_url  | URL that can be provided to git clone to clone the repository anonymously via the git protocol |
-| html_url       | URL to the repository on the web.                                                              |
-| http_clone_url | URL that can be provided to git clone to clone the repository via HTTPS.                       |
-| ssh_clone_url  | URL that can be provided to git clone to clone the repository via SSH.                         |
+| Name | Description |
+|------|-------------|
+| full\_name | A string of the form 'orgname/reponame'. |
+| git\_clone\_url | URL that can be provided to git clone to clone the repository anonymously via the git protocol |
+| html\_url | URL to the repository on the web. |
+| http\_clone\_url | URL that can be provided to git clone to clone the repository via HTTPS. |
+| ssh\_clone\_url | URL that can be provided to git clone to clone the repository via SSH. |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 

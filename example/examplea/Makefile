@@ -23,6 +23,7 @@ p:
 	terraform plan -refresh=true
 
 apply: build
+
 build:
 	terraform apply -auto-approve
 
