@@ -1,5 +1,3 @@
-[![Slalom][logo]](https://slalom.com)
-
 # terraform-github-repository
 
 [![Build Status](https://github.com/JamesWoolfenden/terraform-github-repository/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-github-repository)
@@ -20,40 +18,41 @@ module repo {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| github | n/a |
+| Name   | Version |
+| ------ | ------- |
+| github | n/a     |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| branch | n/a | `string` | `"master"` | no |
-| description | Put more effort into to descibing what your repo is about. | `string` | n/a | yes |
-| enforce\_admins | n/a | `bool` | `false` | no |
-| has\_downloads | n/a | `bool` | `false` | no |
-| has\_issues | n/a | `bool` | `false` | no |
-| has\_projects | n/a | `bool` | `false` | no |
-| has\_wiki | This enables a wiki on your github repo. Why not. | `bool` | n/a | yes |
-| name | We are following tech-resource-topic after hashicorp. | `string` | n/a | yes |
-| private | Unless you have paid for private repos this ones going to be false. | `bool` | `true` | no |
-| topics | n/a | `list` | n/a | yes |
+| Name           | Description                                                         | Type     | Default    | Required |
+| -------------- | ------------------------------------------------------------------- | -------- | ---------- | :------: |
+| branch         | n/a                                                                 | `string` | `"master"` |    no    |
+| description    | Put more effort into to descibing what your repo is about.          | `string` | n/a        |   yes    |
+| enforce_admins | n/a                                                                 | `bool`   | `false`    |    no    |
+| has_downloads  | n/a                                                                 | `bool`   | `false`    |    no    |
+| has_issues     | n/a                                                                 | `bool`   | `false`    |    no    |
+| has_projects   | n/a                                                                 | `bool`   | `false`    |    no    |
+| has_wiki       | This enables a wiki on your github repo. Why not.                   | `bool`   | n/a        |   yes    |
+| name           | We are following tech-resource-topic after hashicorp.               | `string` | n/a        |   yes    |
+| private        | Unless you have paid for private repos this ones going to be false. | `bool`   | `true`     |    no    |
+| topics         | n/a                                                                 | `list`   | n/a        |   yes    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| full\_name | A string of the form 'orgname/reponame'. |
-| git\_clone\_url | URL that can be provided to git clone to clone the repository anonymously via the git protocol |
-| html\_url | URL to the repository on the web. |
-| http\_clone\_url | URL that can be provided to git clone to clone the repository via HTTPS. |
-| ssh\_clone\_url | URL that can be provided to git clone to clone the repository via SSH. |
+| Name           | Description                                                                                    |
+| -------------- | ---------------------------------------------------------------------------------------------- |
+| full_name      | A string of the form 'orgname/reponame'.                                                       |
+| git_clone_url  | URL that can be provided to git clone to clone the repository anonymously via the git protocol |
+| html_url       | URL to the repository on the web.                                                              |
+| http_clone_url | URL that can be provided to git clone to clone the repository via HTTPS.                       |
+| ssh_clone_url  | URL that can be provided to git clone to clone the repository via SSH.                         |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
@@ -71,7 +70,7 @@ Check out these related projects.
 
 ## Copyrights
 
-Copyright © 2019-2020 [Slalom, LLC](https://slalom.com)
+Copyright © 2019-2020 James Woolfenden
 
 ## License
 
@@ -102,8 +101,6 @@ under the License.
 
 [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
 [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-[logo]: https://gist.githubusercontent.com/JamesWoolfenden/5c457434351e9fe732ca22b78fdd7d5e/raw/15933294ae2b00f5dba6557d2be88f4b4da21201/slalom-logo.png
-[website]: https://slalom.com
 [github]: https://github.com/jameswoolfenden
 [linkedin]: https://www.linkedin.com/in/jameswoolfenden/
 [twitter]: https://twitter.com/JimWoolfenden
