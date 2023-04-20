@@ -26,33 +26,43 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| github | n/a |
+| <a name="provider_github"></a> [github](#provider\_github) | n/a |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [github_branch_protection.repositories](https://registry.terraform.io/providers/hashicorp/github/latest/docs/resources/branch_protection) | resource |
+| [github_repository.repositories](https://registry.terraform.io/providers/hashicorp/github/latest/docs/resources/repository) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| branch | n/a | `string` | `"master"` | no |
-| description | Put more effort into to descibing what your repo is about. | `string` | n/a | yes |
-| enforce\_admins | n/a | `bool` | `false` | no |
-| has\_downloads | n/a | `bool` | `false` | no |
-| has\_issues | n/a | `bool` | `false` | no |
-| has\_projects | n/a | `bool` | `false` | no |
-| has\_wiki | This enables a wiki on your github repo. Why not. | `bool` | n/a | yes |
-| name | We are following tech-resource-topic after hashicorp. | `string` | n/a | yes |
-| private | Unless you have paid for private repos this ones going to be false. | `bool` | `true` | no |
-| topics | n/a | `list` | n/a | yes |
+| <a name="input_branch"></a> [branch](#input\_branch) | n/a | `string` | `"master"` | no |
+| <a name="input_description"></a> [description](#input\_description) | Put more effort into to descibing what your repo is about. | `string` | n/a | yes |
+| <a name="input_enforce_admins"></a> [enforce\_admins](#input\_enforce\_admins) | n/a | `bool` | `false` | no |
+| <a name="input_has_downloads"></a> [has\_downloads](#input\_has\_downloads) | n/a | `bool` | `false` | no |
+| <a name="input_has_issues"></a> [has\_issues](#input\_has\_issues) | n/a | `bool` | `false` | no |
+| <a name="input_has_projects"></a> [has\_projects](#input\_has\_projects) | n/a | `bool` | `false` | no |
+| <a name="input_has_wiki"></a> [has\_wiki](#input\_has\_wiki) | This enables a wiki on your github repo. Why not. | `bool` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | We are following tech-resource-topic after hashicorp. | `string` | n/a | yes |
+| <a name="input_private"></a> [private](#input\_private) | Unless you have paid for private repos this ones going to be false. | `bool` | `true` | no |
+| <a name="input_topics"></a> [topics](#input\_topics) | n/a | `list(any)` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| full\_name | A string of the form 'orgname/reponame'. |
-| git\_clone\_url | URL that can be provided to git clone to clone the repository anonymously via the git protocol |
-| html\_url | URL to the repository on the web. |
-| http\_clone\_url | URL that can be provided to git clone to clone the repository via HTTPS. |
-| ssh\_clone\_url | URL that can be provided to git clone to clone the repository via SSH. |
-
+| <a name="output_full_name"></a> [full\_name](#output\_full\_name) | A string of the form 'orgname/reponame'. |
+| <a name="output_git_clone_url"></a> [git\_clone\_url](#output\_git\_clone\_url) | URL that can be provided to git clone to clone the repository anonymously via the git protocol |
+| <a name="output_html_url"></a> [html\_url](#output\_html\_url) | URL to the repository on the web. |
+| <a name="output_http_clone_url"></a> [http\_clone\_url](#output\_http\_clone\_url) | URL that can be provided to git clone to clone the repository via HTTPS. |
+| <a name="output_ssh_clone_url"></a> [ssh\_clone\_url](#output\_ssh\_clone\_url) | URL that can be provided to git clone to clone the repository via SSH. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
@@ -100,4 +110,3 @@ under the License.
 
 [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
 [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-

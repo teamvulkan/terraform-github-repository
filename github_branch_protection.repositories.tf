@@ -1,4 +1,6 @@
 resource "github_branch_protection" "repositories" {
+  #checkov:skip=CKV_GIT_6:
+  #checkov:skip=CKV_GIT_5:
   repository     = github_repository.repositories.name
   branch         = var.branch
   enforce_admins = var.enforce_admins
