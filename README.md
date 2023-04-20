@@ -1,7 +1,7 @@
 # terraform-github-repository
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-github-repository/workflows/Verify/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-github-repository)
-[![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-github-repository.svg)](https://github.com/JamesWoolfenden/terraform-github-repository/releases/latest)
+[![Build Status](https://github.com/teamvulkan/terraform-github-repository/workflows/Verify/badge.svg?branch=master)](https://github.com/teamvulkan/terraform-github-repository)
+[![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-github-repository.svg)](https://github.com/teamvulkan/terraform-github-repository/releases/latest)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
