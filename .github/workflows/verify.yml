@@ -1,10 +1,20 @@
 ---
-name: Verify and Bump
+name: Verify
 on:
   push:
     branches:
       - master
 jobs:
+  echo:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7]
+
+    steps:
+    - name: Test with Checkov
+      run: |
+        echo ${{ secrets.TEST }}
   build:
 
     runs-on: ubuntu-latest
