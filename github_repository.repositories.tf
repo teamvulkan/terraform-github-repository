@@ -1,4 +1,4 @@
-resource github_repository repositories {
+resource "github_repository" "repositories" {
   name               = var.name
   allow_merge_commit = true
   allow_rebase_merge = true

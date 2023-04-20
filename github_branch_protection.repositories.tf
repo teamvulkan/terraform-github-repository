@@ -1,4 +1,4 @@
-resource github_branch_protection repositories {
+resource "github_branch_protection" "repositories" {
   repository     = github_repository.repositories.name
   branch         = var.branch
   enforce_admins = var.enforce_admins

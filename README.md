@@ -1,6 +1,6 @@
 # terraform-github-repository
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-github-repository/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-github-repository)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-github-repository/workflows/Verify/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-github-repository)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-github-repository.svg)](https://github.com/JamesWoolfenden/terraform-github-repository/releases/latest)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
@@ -69,7 +69,7 @@ Check out these related projects.
 
 ## Copyrights
 
-Copyright © 2019-2020 James Woolfenden
+Copyright © 2019-2023 James Woolfenden
 
 ## License
 
@@ -100,11 +100,4 @@ under the License.
 
 [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
 [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-[github]: https://github.com/jameswoolfenden
-[linkedin]: https://www.linkedin.com/in/jameswoolfenden/
-[twitter]: https://twitter.com/JimWoolfenden
-[share_twitter]: https://twitter.com/intent/tweet/?text=terraform-github-repository&url=https://github.com/JamesWoolfenden/terraform-github-repository
-[share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-github-repository&url=https://github.com/JamesWoolfenden/terraform-github-repository
-[share_reddit]: https://reddit.com/submit/?url=https://github.com/JamesWoolfenden/terraform-github-repository
-[share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/JamesWoolfenden/terraform-github-repository
-[share_email]: mailto:?subject=terraform-github-repository&body=https://github.com/JamesWoolfenden/terraform-github-repository
+
