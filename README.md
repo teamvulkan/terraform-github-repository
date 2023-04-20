@@ -50,6 +50,7 @@ No modules.
 | <a name="input_has_projects"></a> [has\_projects](#input\_has\_projects) | n/a | `bool` | `false` | no |
 | <a name="input_has_wiki"></a> [has\_wiki](#input\_has\_wiki) | This enables a wiki on your github repo. Why not. | `bool` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | We are following tech-resource-topic after hashicorp. | `string` | n/a | yes |
+| <a name="input_pattern"></a> [pattern](#input\_pattern) | n/a | `string` | n/a | yes |
 | <a name="input_private"></a> [private](#input\_private) | Visibility to be one of [public private internal] | `string` | `"public"` | no |
 | <a name="input_topics"></a> [topics](#input\_topics) | n/a | `list(any)` | n/a | yes |
 

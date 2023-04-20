@@ -42,3 +42,7 @@ variable "has_projects" {
   type    = bool
   default = false
 }
+
+variable "pattern" {
+  type = string
+}
