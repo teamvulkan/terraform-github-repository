@@ -1,4 +1,5 @@
 module "repository" {
+  #checkov:skip=CKV_GIT_1
   source      = "../../"
   name        = var.name
   description = var.description

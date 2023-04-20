@@ -43,7 +43,6 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_branch"></a> [branch](#input\_branch) | n/a | `string` | `"master"` | no |
 | <a name="input_description"></a> [description](#input\_description) | Put more effort into to descibing what your repo is about. | `string` | n/a | yes |
 | <a name="input_enforce_admins"></a> [enforce\_admins](#input\_enforce\_admins) | n/a | `bool` | `false` | no |
 | <a name="input_has_downloads"></a> [has\_downloads](#input\_has\_downloads) | n/a | `bool` | `false` | no |
@@ -51,7 +50,7 @@ No modules.
 | <a name="input_has_projects"></a> [has\_projects](#input\_has\_projects) | n/a | `bool` | `false` | no |
 | <a name="input_has_wiki"></a> [has\_wiki](#input\_has\_wiki) | This enables a wiki on your github repo. Why not. | `bool` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | We are following tech-resource-topic after hashicorp. | `string` | n/a | yes |
-| <a name="input_private"></a> [private](#input\_private) | Unless you have paid for private repos this ones going to be false. | `bool` | `true` | no |
+| <a name="input_private"></a> [private](#input\_private) | Visibility to be one of [public private internal] | `string` | `"public"` | no |
 | <a name="input_topics"></a> [topics](#input\_topics) | n/a | `list(any)` | n/a | yes |
 
 ## Outputs

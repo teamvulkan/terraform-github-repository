@@ -14,8 +14,8 @@ variable "has_wiki" {
 }
 
 variable "private" {
-  description = "Unless you have paid for private repos this ones going to be false."
-  type        = bool
+  description = "Visibility to be one of [public private internal]"
+  type        = string
 }
 
 variable "topics" {

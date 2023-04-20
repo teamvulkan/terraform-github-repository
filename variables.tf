@@ -14,18 +14,13 @@ variable "has_wiki" {
 }
 
 variable "private" {
-  description = "Unless you have paid for private repos this ones going to be false."
-  type        = bool
-  default     = true
+  description = "Visibility to be one of [public private internal]"
+  type        = string
+  default     = "public"
 }
 
 variable "topics" {
   type = list(any)
-}
-
-variable "branch" {
-  type    = string
-  default = "master"
 }
 
 variable "enforce_admins" {

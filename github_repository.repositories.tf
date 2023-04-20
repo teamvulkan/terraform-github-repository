@@ -8,7 +8,7 @@ resource "github_repository" "repositories" {
   has_issues           = var.has_issues
   has_projects         = var.has_projects
   has_wiki             = var.has_wiki
-  private              = var.private
+  visibility           = var.private
   topics               = var.topics
   vulnerability_alerts = true
 }
